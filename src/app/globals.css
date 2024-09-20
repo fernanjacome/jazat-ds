@@ -1,27 +1,75 @@
+
+
+:root {
+  --color-primary: #5d45fd;
+  --color-secondary: #ede9fe;
+  --color-background: #161616;
+  --font-primary: 'Montserrat', sans-serif;
+
+  --font-s-base: 1rem;
+  --font-s-h1: 1.5rem;
+  --font-s-h2: 1.4rem;
+  --font-s-h3: 1.3rem;
+  --font-s-h4: 1.2rem;
+}
+
+h1{
+  font-size: var(--font-s-h1) !important;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+}
+
+.home-content{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 85%;
+}
+
+.home-title{
+  font-size: 5rem !important;
+  font-weight: bold;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.radial-bg {
+  position: fixed;
+  top: -0%;
+  left: -45%;
+  width: 90rem;
+  height: 90rem;
+  border-radius: 100%;
+  background: rgb(93, 69, 253);
+  background: radial-gradient(
+    circle,
+    rgba(93, 69, 253, 1) 0%,
+    rgba(93, 69, 253, 0) 50%
+  );
+  opacity: 0.4;
+  z-index: -1000;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.radial-bg-2 {
+  position: fixed;
+  top: -50%;
+  right: -45%;
+  width: 80rem;
+  height: 80rem;
+  border-radius: 100%;
+  background: rgb(93, 69, 253);
+  background: radial-gradient(
+    circle,
+    rgba(93, 69, 253, 1) 0%,
+    rgba(93, 69, 253, 0) 50%
+  );
+  opacity: 0.4;
+  z-index: -1000;
 }
