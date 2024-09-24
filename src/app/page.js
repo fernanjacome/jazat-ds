@@ -6,8 +6,9 @@ import ClientSatisfaction from "@/components/ClientSatisfaction";
 import Card from "@/components/Card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { MdOutlineTextsms } from "react-icons/md";
+import { Home } from "./home/home";
 
-export default function Home() {
+export default function index() {
   return <MainContent />;
 }
 
@@ -20,28 +21,7 @@ const MainContent = () => {
 
   return (
     <main>
-      <div className="home-content">
-        <h1 className="home-title">{currentLang[language].title}</h1>
-        <p className="instructions">{currentLang[language].instructions}</p>
-        <div className="flex gap-5">
-          <Button
-            className="text-white"
-            variant="outline"
-            label={currentLang[language].button}
-            icon={MdOutlineTextsms}
-            iconPosition="right"
-          />
-          <ClientSatisfaction />
-        </div>
-      </div>
-      <div className="mt-5 flex flex-col text-center gap-6">
-        <h3 className="font-semibold">Trusted by 30+ businesses</h3>
-        <div className="flex gap-5">
-          {Array.from({ length: 8 }).map((_, index) => (
-            <Card key={index} logo="/logos/teams.svg" href="#home" />
-          ))}
-        </div>
-      </div>
+      <Home language={language} currentLang={currentLang} />
     </main>
   );
 };

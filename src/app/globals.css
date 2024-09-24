@@ -13,6 +13,16 @@
   --font-s-h4: 1.2rem;
 }
 
+.text-gradient {
+
+  background: linear-gradient(90deg, rgba(93,69,253,0.7483368347338936) 0%, rgba(93,69,253,1) 100%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;
+  text-fill-color: transparent; 
+}
+
+
 h1{
   font-size: var(--font-s-h1) !important;
 }
@@ -20,20 +30,36 @@ h1{
 body {
   font-family: var(--font-primary);
   background-color: var(--color-background);
+  background-image: linear-gradient(rgba(73, 28, 146, 0.8), rgba(27, 32, 99, 0.712));
+  background-blend-mode: multiply; 
   color: var(--color-secondary);
 }
 
 .home-content{
+  display: flex;
+  
+  gap: 2rem;
+}
+
+.column-1{
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 85%;
+  flex: 1;
+  
+  max-width: 670px
+}
+
+.column-2{
+  flex: 1;
 }
 
 .home-title{
-  font-size: 5rem !important;
+  font-size: 3.2vw !important;
   font-weight: bold;
+  min-height: 260px;
+  max-height: 260px;
 }
 
 @tailwind base;
@@ -44,7 +70,7 @@ body {
 .radial-bg {
   position: fixed;
   top: -0%;
-  left: -45%;
+  left: -55%;
   width: 90rem;
   height: 90rem;
   border-radius: 100%;
@@ -60,7 +86,7 @@ body {
 .radial-bg-2 {
   position: fixed;
   top: -50%;
-  right: -45%;
+  right: -55%;
   width: 80rem;
   height: 80rem;
   border-radius: 100%;
@@ -72,4 +98,57 @@ body {
   );
   opacity: 0.4;
   z-index: -1000;
+}
+
+.svg-footer{
+  fill: white !important;
+  color: white !important;
+}
+.invert {
+  filter: invert(1);
+}
+
+.client-img-a{
+  background-image: url("../../public/icons/condor.png");
+  background-size: cover;
+}
+.client-img-p{
+  background-image: url("../../public/icons/payconer.png");
+  background-size: cover;
+}
+.client-img{
+  background-image: url("../../public/icons/as.png");
+  background-size: cover;
+}
+
+.text-container {
+  position: relative;
+  overflow: hidden;
+  min-width: 150px;
+  height: 40px;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  margin: 0;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.text.down {
+  transform: translateY(100%); 
+  opacity: 0;
+}
+
+.text.up {
+  transform: translateY(100%);
+  opacity: 0; 
+}
+
+.text-container .up {
+  opacity: 1; 
+  transform: translateY(0);
 }

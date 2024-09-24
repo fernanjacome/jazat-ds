@@ -7,6 +7,7 @@ module.exports = {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
         background: "var(--color-background)",
+        gradient: "var(--color-gradient)",
       },
       fontFamily: {
         montserrat: ["var(--font-primary)", "sans-serif"],
