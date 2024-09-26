@@ -16,8 +16,8 @@ const LanguageSwitcher = () => {
       <Image
         src={language === "en" ? SpainIcon : UKIcon} // Cambia el icono dependiendo del idioma
         alt={language === "en" ? "Switch to Spanish" : "Switch to English"}
-        width={40} // Tamaño del icono
-        height={40}
+        width={50} // Tamaño del icono
+        height={50}
         className="rounded-full"
       />
     </button>

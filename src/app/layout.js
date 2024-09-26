@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import "./globals.css";
 import { FiArrowUpRight, FiMenu, FiX } from "react-icons/fi"; // Import icons
+import { FaBars } from "react-icons/fa6";
 import Button from "@/components/Button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { LanguageProvider, useLanguage } from "@/contexts/LanguageContext";
@@ -48,7 +49,9 @@ const MainContent = ({ children, title, description, sectionName }) => {
       <body className="relative text-secondary font-montserrat flex flex-col  flex-grow">
         <header className="z-[100] ph:bg-background flex px-4 py-2 border-b-2 border-opacity-15 border-gray-400 ">
           {/* Logo and Menu */}
-          <nav className=" z-[100] flex justify-between ph:justify-center items-center w-[90%] mx-auto">
+          <nav className=" z-[100] flex justify-between items-center w-[90%] mx-auto">
+            <LanguageSwitcher className="w-full" />
+            {/* Logo boton */}
             <a href="/">
               <img
                 src="./logo.png"
@@ -56,18 +59,21 @@ const MainContent = ({ children, title, description, sectionName }) => {
                 className="z-[100] h-20 md13:h-20 xl:h-12 ph:hidden"
               />
             </a>
+            {/* Logo boton phone */}
+            <img
+              src="./logo-fill.png"
+              alt="Logo Jazat"
+              className="z-[100] ph:h-20 md:hidden mr-10"
+            />
+
             <button
               className="z-[100] md:hidden p-2"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              <img
-                src="./logo-fill.png"
-                alt="Logo Jazat"
-                className="z-[100] ph:h-20 md:hidden"
-              />
+              <FaBars />
             </button>
             {/* Desktop Menu */}
-            <div className="z-[100] hidden md:flex md:items-center ">
+            <div className="z-[100]  hidden md:flex md:items-center ">
               <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
                 {["home", "projects", "about", "contact"].map((item) => (
                   <li key={item}>
@@ -88,37 +94,36 @@ const MainContent = ({ children, title, description, sectionName }) => {
               <LanguageSwitcher />
             </div>
           </nav>
-        </header>
 
-        {/* Mobile Dropdown Menu */}
-        <div
-          className={`z-[90] absolute top-[0%] left-0 w-full min-w-fit bg-background transition-transform duration-300 ease-in-out ${
-            menuOpen ? " translate-y-[6.5rem]" : "-translate-y-[100%]"
-          } md:hidden`}
-        >
-          <ul className="flex flex-col items-center gap-8 p-4">
-            <div className="flex gap-2">
-              <Button
-                label={currentLang[language].letstalk}
-                icon={FiArrowUpRight}
-                iconPosition="right"
-                className="flex px-2 text-sm h-10"
-              />
-            </div>
-            {["home", "projects", "about", "contact"].map((item) => (
-              <li key={item}>
-                <a
-                  href={`/${item}`}
-                  className="hover:text-purple-500"
-                  onClick={() => setMenuOpen(false)} // Close menu on link click
-                >
-                  {currentLang[language][item]}
-                </a>
-              </li>
-            ))}
-            <LanguageSwitcher />
-          </ul>
-        </div>
+          {/* Mobile Dropdown Menu */}
+          <div
+            className={`z-[90] absolute top-[8%]  right-0 w-full min-w-fit bg-background transition-transform duration-300 ease-in-out ${
+              menuOpen ? " translate-x-[0%]" : "translate-x-[100%]"
+            } md:hidden`}
+          >
+            <ul className="flex flex-col items-center gap-8 p-4">
+              <div className="flex gap-2">
+                <Button
+                  label={currentLang[language].letstalk}
+                  icon={FiArrowUpRight}
+                  iconPosition="right"
+                  className="flex px-2 text-sm h-10"
+                />
+              </div>
+              {["home", "projects", "about", "contact"].map((item) => (
+                <li key={item}>
+                  <a
+                    href={`/${item}`}
+                    className="hover:text-purple-500"
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {currentLang[language][item]}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </header>
 
         <main
           className="z-90 mx-2 md:mx-16 flex-grow my-1 px-2 md:px-4 lg:px-10"
@@ -127,7 +132,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
           {children}
         </main>
 
-        <footer className=" bottom-0 w-full flex flex-col gap-2 md:flex-row justify-between bg-background text-white text-center p-4">
+        <footer className="fixed bottom-0 w-full flex flex-col gap-2 md:flex-row justify-between bg-background text-white text-center p-4">
           <div className="flex flex-col items-center md:text-left">
             <p className=" flex flex-col text-xs">
               <a href="/privacy" className="hover:underline">
