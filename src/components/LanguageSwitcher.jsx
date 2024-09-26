@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
   return (
     <button
       onClick={switchLanguage} // Cambia el idioma al hacer clic
-      className="p-0.5 rounded-full bg-primary hover:bg-purple-500 transition-all duration-300 focus:outline-none"
+      className="p-0.5 rounded-full bg-primary hover:bg-purple-500 transition-all duration-300 focus:outline-none svg-lang"
       aria-label={language === "en" ? "Switch to Spanish" : "Switch to English"}
     >
       <Image

@@ -53,7 +53,7 @@ export const Home = ({ language, currentLang }) => {
   return (
     <section className="home-content">
       <div className="column-1">
-        <h1 className="home-title">
+        <h1 className="home-title ">
           {title.split(" ").map((word, index) =>
             highlightedWords.includes(word) ? (
               <span key={index} className="text-gradient">
@@ -78,14 +78,14 @@ export const Home = ({ language, currentLang }) => {
       </div>
 
       {/* Carrusel de Plantillas */}
-      <div className="column-2 relative mt-4">
+      <div className="column-2 relative mt-4  xl:mt-14 ">
         <IntercaladorTexto language={language} />
-        <div className="relative mt-2 h-96 overflow-hidden rounded-md">
+        <div className="relative mt-2 h-96 overflow-hidden rounded-md md13:h-80 xl:h-72">
           {/* Imagen activa del carrusel */}
           {templates.map((template, index) => (
             <div
               key={index}
-              className={`absolute top-0 left-0 w-full h-full transition-transform duration-200 ${
+              className={`absolute top-0 left-0 w-full h-full transition-transform duration-300 ease-in-out  ${
                 currentIndex === index ? "translate-x-0" : "translate-x-full"
               }`}
             >
@@ -94,6 +94,7 @@ export const Home = ({ language, currentLang }) => {
                 alt={template.title}
                 layout="fill"
                 objectFit="cover"
+                loading="lazy"
                 className="object-cover"
               />
             </div>

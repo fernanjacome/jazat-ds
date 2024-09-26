@@ -19,6 +19,11 @@ module.exports = {
         sizeH3: "var(--font-s-h3)",
         sizeH4: "var(--font-s-h4)",
       },
+      screens: {
+        md13: "1366px",
+        ph: { max: "639px" },
+      },
+      maxWidth: {},
     },
   },
   plugins: [],

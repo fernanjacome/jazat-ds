@@ -23,7 +23,7 @@ const SocialIcons = ({ size = 20 }) => {
   ];
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 justify-center">
       {icons.map((icon, index) => (
         <a
           key={index}

@@ -35,32 +35,71 @@ body {
   color: var(--color-secondary);
 }
 
+.svg-lang{
+  margin-top: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+}
+
 .home-content{
   display: flex;
-  
+  justify-content: center;
   gap: 2rem;
+  min-height: 100vh;
 }
+
+
 
 .column-1{
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  flex: 1;
-  
+  flex: 1;  
   max-width: 670px
 }
 
 .column-2{
   flex: 1;
+  max-width: 670px;
 }
 
 .home-title{
-  font-size: 3.2vw !important;
+  font-size: 3.5rem !important;
   font-weight: bold;
   min-height: 260px;
   max-height: 260px;
 }
+
+@media (max-width: 640px){
+  .home-content{
+    flex-direction: column;
+  }
+  .home-title{
+    font-size: 2.5rem !important;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+.column-1{
+  gap: 2rem;
+}
+
+  .home-title{
+    min-height: 200px;
+    font-size: 3rem !important;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1280px) {
+  .column-1{
+    gap: 3rem;
+  }
+  
+    .home-title{
+      min-height: 200px;
+      font-size: 2.8rem !important;
+    }
+  }
 
 @tailwind base;
 @tailwind components;

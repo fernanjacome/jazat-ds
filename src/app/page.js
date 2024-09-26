@@ -20,7 +20,7 @@ const MainContent = () => {
   }
 
   return (
-    <main>
+    <main className="w-full max-w-full overflow-x-hidden">
       <Home language={language} currentLang={currentLang} />
     </main>
   );
