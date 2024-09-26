@@ -33,8 +33,24 @@ body {
   background-image: linear-gradient(rgba(73, 28, 146, 0.8), rgba(27, 32, 99, 0.712));
   background-blend-mode: multiply; 
   color: var(--color-secondary);
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
+.main-content{
+  margin-top: 1rem; 
+  margin-bottom: 20rem;  
+  flex-grow: 1;
+  
+  padding:  1rem 2rem;
+  
+  min-height: 100vh;
+}
 
 .svg-lang{
   margin-top: 0.3rem;
@@ -210,4 +226,34 @@ body {
 .text-container .up {
   opacity: 1; 
   transform: translateY(0);
+}
+
+
+.mobile-menu {
+  position: absolute; 
+  top: 102%; 
+  right: 0; 
+  width: 100%; 
+  min-width: 200px; 
+  background: var(--color-background);
+  z-index: 90; /* Coloca encima de otros elementos */
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+.mobile-menu.hidden {
+  transform: translateX(100%); /* Fuera de la vista */
+}
+
+.footer{
+  position: absolute;
+  bottom: 0%; 
+  display: flex; 
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: var(--color-background); 
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
 }

@@ -52,8 +52,8 @@ const MainContent = ({ children, title, description, sectionName }) => {
         />
         <meta name="description" content={description} />
       </head>
-      <body className="relative text-secondary font-montserrat flex flex-col flex-grow">
-        <header className="z-[100] ph:bg-background flex px-4 py-2 border-b-2 border-opacity-15 border-gray-400">
+      <body>
+        <header className="relative z-[100] ph:bg-background flex px-4 py-2 border-b-2 border-opacity-15 border-gray-400">
           {/* Logo and Menu */}
           <nav className="z-[100] flex justify-between items-center w-[90%] mx-auto">
             <div className="md:hidden">
@@ -105,11 +105,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
           </nav>
 
           {/* Mobile Dropdown Menu */}
-          <div
-            className={`z-[90] absolute top-[8%] right-0 w-full min-w-fit bg-background transition-transform duration-300 ease-in-out ${
-              menuOpen ? "translate-x-[0%]" : "translate-x-[100%]"
-            } md:hidden`}
-          >
+          <div className={`mobile-menu ${menuOpen ? "" : "hidden"}`}>
             <ul className="flex flex-col items-center gap-8 p-4">
               <div className="flex gap-2">
                 <Button
@@ -134,14 +130,11 @@ const MainContent = ({ children, title, description, sectionName }) => {
           </div>
         </header>
 
-        <main
-          className="z-90 mx-2 md:mx-16 flex-grow my-1 px-2 md:px-4 lg:px-10"
-          id={sectionName}
-        >
+        <main className="main-content" id={sectionName}>
           {children}
         </main>
 
-        <footer className="absolute bottom-0 w-full flex flex-col gap-2 md:flex-row justify-between bg-background text-white text-center p-4">
+        <footer className="footer">
           <div className="flex flex-col items-center md:text-left">
             <p className="flex flex-col text-xs">
               <a href="/privacy" className="hover:underline">

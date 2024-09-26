@@ -19,9 +19,5 @@ const MainContent = () => {
     return <p>Error: No se encontró el idioma seleccionado.</p>;
   }
 
-  return (
-    <main className="w-full max-w-full overflow-x-hidden">
-      <Home language={language} currentLang={currentLang} />
-    </main>
-  );
+  return <Home language={language} currentLang={currentLang} />;
 };
