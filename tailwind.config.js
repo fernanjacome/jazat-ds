@@ -21,7 +21,7 @@ module.exports = {
       },
       screens: {
         md13: "1366px",
-        ph: { max: "639px" },
+        ph: { max: "770px" },
       },
       maxWidth: {},
     },

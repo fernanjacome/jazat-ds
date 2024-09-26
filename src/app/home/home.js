@@ -53,7 +53,7 @@ export const Home = ({ language, currentLang }) => {
   return (
     <section className="home-content">
       <div className="column-1">
-        <h1 className="home-title ">
+        <h1 className="home-title  ">
           {title.split(" ").map((word, index) =>
             highlightedWords.includes(word) ? (
               <span key={index} className="text-gradient">
@@ -64,10 +64,12 @@ export const Home = ({ language, currentLang }) => {
             )
           )}
         </h1>
-        <p className="instructions">{currentLang[language].instructions}</p>
-        <div className="flex gap-5">
+        <p className="instructions ph:text-center">
+          {currentLang[language].instructions}
+        </p>
+        <div className="flex ph:flex-col ph:justify-center ph:items-center gap-5">
           <Button
-            className="text-white"
+            className="text-white ph:max-w-[50%]"
             variant="outline"
             label={currentLang[language].button}
             icon={MdOutlineTextsms}
@@ -78,9 +80,9 @@ export const Home = ({ language, currentLang }) => {
       </div>
 
       {/* Carrusel de Plantillas */}
-      <div className="column-2 relative mt-4  xl:mt-14 ">
+      <div className="column-2 relative mt-4  xl:mt-14 ph:mb-5 ">
         <IntercaladorTexto language={language} />
-        <div className="relative mt-2 h-96 overflow-hidden rounded-md md13:h-80 xl:h-72">
+        <div className="relative mt-2 h-96 overflow-hidden rounded-md md13:h-80 xl:h-72 ph:h-60 ">
           {/* Imagen activa del carrusel */}
           {templates.map((template, index) => (
             <div
