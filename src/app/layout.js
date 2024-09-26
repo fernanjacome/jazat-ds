@@ -31,9 +31,8 @@ export default function RootLayout({
 
 const MainContent = ({ children, title, description, sectionName }) => {
   const { language, lang: currentLang } = useLanguage();
-  const [menuOpen, setMenuOpen] = useState(false); // State for the menu
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Error handling for the language
   if (!currentLang || !currentLang[language]) {
     return <p>Error: No se encontró el idioma seleccionado.</p>;
   }
@@ -83,13 +82,15 @@ const MainContent = ({ children, title, description, sectionName }) => {
             {/* Desktop Menu */}
             <div className="z-[100] hidden md:flex md:items-center">
               <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-                {["home", "projects", "about", "contact"].map((item) => (
-                  <li key={item}>
-                    <a href={`/${item}`} className="hover:text-purple-500">
-                      {currentLang[language][item]}
-                    </a>
-                  </li>
-                ))}
+                {["home", "projects", "about", "contact", "services"].map(
+                  (item) => (
+                    <li key={item}>
+                      <a href={`/${item}`} className="hover:text-purple-500">
+                        {currentLang[language][item]}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
             <div className="z-[100] hidden md:flex gap-2">
@@ -105,7 +106,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
           </nav>
 
           {/* Mobile Dropdown Menu */}
-          <div className={`mobile-menu ${menuOpen ? "" : "hidden"}`}>
+          <div className={`mobile-menu ${menuOpen ? "" : "out hidden"}`}>
             <ul className="flex flex-col items-center gap-8 p-4">
               <div className="flex gap-2">
                 <Button
@@ -115,17 +116,19 @@ const MainContent = ({ children, title, description, sectionName }) => {
                   className="flex px-2 text-sm h-10"
                 />
               </div>
-              {["home", "projects", "about", "contact"].map((item) => (
-                <li key={item}>
-                  <a
-                    href={`/${item}`}
-                    className="hover:text-purple-500"
-                    onClick={() => setMenuOpen(false)} // Cierra el menú al seleccionar
-                  >
-                    {currentLang[language][item]}
-                  </a>
-                </li>
-              ))}
+              {["home", "projects", "about", "contact", "services"].map(
+                (item) => (
+                  <li key={item}>
+                    <a
+                      href={`/${item}`}
+                      className="hover:text-purple-500"
+                      onClick={() => setMenuOpen(false)} // Cierra el menú al seleccionar
+                    >
+                      {currentLang[language][item]}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </header>
@@ -146,7 +149,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
             </p>
           </div>
           <div>
-            <p className="mt-2 text-sm font-semibold">Jazat Digital Studio</p>
+            <p className="mt-2 text-sm font-semibold">Jazat WebCraft</p>
           </div>
           <div className="flex flex-col justify-center gap-1">
             <p className="text-xs">Nuestras Redes</p>

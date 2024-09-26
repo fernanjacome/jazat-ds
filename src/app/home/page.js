@@ -6,9 +6,9 @@ import ClientSatisfaction from "@/components/ClientSatisfaction";
 import Card from "@/components/Card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { MdOutlineTextsms } from "react-icons/md";
-import { Home } from "./home/home";
+import { Home } from "./home";
 
-export default function index() {
+export default function home() {
   return <MainContent />;
 }
 
@@ -19,9 +19,5 @@ const MainContent = () => {
     return <p>Error: No se encontró el idioma seleccionado.</p>;
   }
 
-  return (
-    <section>
-      <Home language={language} currentLang={currentLang} />
-    </section>
-  );
+  return <Home language={language} currentLang={currentLang} />;
 };
