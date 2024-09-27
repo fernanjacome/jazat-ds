@@ -117,7 +117,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
           <div className="overflow-hidden absolute w-full h-[22rem] top-24 left-0 z-[90]">
             <div
               className={`absolute top-[0%] right-[0%] w-full mobile-menu bg-background ${
-                menuOpen ? "open" : isExiting ? "" : "closing"
+                menuOpen ? "open" : isExiting ? "closing" : "closing"
               }`}
             >
               <ul className="flex flex-col items-center gap-8 p-4">
@@ -135,7 +135,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
                       <a
                         href={`/${item}`}
                         className="hover:text-purple-500"
-                        onClick={closeMenu}
+                        onClick={closeMenu} // Cierra el menú al seleccionar
                       >
                         {currentLang[language][item]}
                       </a>
