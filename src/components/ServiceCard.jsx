@@ -10,7 +10,7 @@ const ServiceCard = ({
   from,
 }) => {
   return (
-    <div className="service-card">
+    <div className="service-card ">
       <h3 className="service-subtitle">{title}</h3>
       <p className="service-description">{description}</p>
       <p className="service-price">

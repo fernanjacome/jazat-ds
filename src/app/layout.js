@@ -39,7 +39,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
     setTimeout(() => {
       setMenuOpen(false);
       setIsExiting(false);
-    }, 300);
+    }, 200);
   };
 
   if (!currentLang || !currentLang[language]) {
@@ -77,14 +77,19 @@ const MainContent = ({ children, title, description, sectionName }) => {
                 className="z-[100] h-20 md13:h-20 xl:h-12 ph:hidden"
               />
             </a>
-            <img
-              src="./logo-fill.png"
-              alt="Logo Jazat"
-              className="z-[100] ph:h-20 md:hidden mr-10"
-            />
+            <a href="#home">
+              <img
+                src="./logo-fill.png"
+                alt="Logo Jazat"
+                className="z-[100] ph:h-20 md:hidden mr-10"
+              />
+            </a>
             <button
               className="z-[100] md:hidden p-2"
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => {
+                setIsExiting(!isExiting);
+                setMenuOpen(!menuOpen);
+              }}
             >
               <FaBars className="text-[1.75rem] text-gray-400" />
             </button>
@@ -114,7 +119,11 @@ const MainContent = ({ children, title, description, sectionName }) => {
           </nav>
 
           {/* Mobile Dropdown Menu */}
-          <div className="overflow-hidden absolute w-full h-[22rem] top-24 left-0 z-[90]">
+          <div
+            className={`overflow-hidden absolute w-full h-[22rem] top-[6.1rem] left-0 md:hidden ${
+              menuOpen ? "open" : isExiting ? "close" : "close"
+            }`}
+          >
             <div
               className={`absolute top-[0%] right-[0%] w-full mobile-menu bg-background ${
                 menuOpen ? "open" : isExiting ? "closing" : "closing"
