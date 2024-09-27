@@ -23,11 +23,12 @@ const lang = {
       "Efficient API and Microservices Integration",
       "Specialized Web Design Consulting to Impact Your Business",
     ],
+    from: "From $",
     ourServices: "Our Services",
     professionalLandingPageTitle: "Professional Landing Page",
     professionalLandingPageDescription:
       "Ideal for businesses looking for a quick and effective online presence with a single page designed with modern technologies and 100% responsive.",
-    professionalLandingPagePrice: "From $",
+
     professionalLandingPageFeature1: "Custom design tailored to your brand",
     professionalLandingPageFeature2: "Basic SEO optimization",
     professionalLandingPageFeature3: "Implementation of Google Analytics",
@@ -37,7 +38,7 @@ const lang = {
     standardCorporateWebsiteTitle: "Standard Corporate Website",
     standardCorporateWebsiteDescription:
       "A website of up to 5 pages, perfect for small and medium businesses that need to showcase their service or product catalog.",
-    standardCorporateWebsitePrice: "From $",
+
     standardCorporateWebsiteFeature1: "Fully personalized design",
     standardCorporateWebsiteFeature2: "SEO optimization for Google",
     standardCorporateWebsiteFeature3:
@@ -49,7 +50,7 @@ const lang = {
     advancedCorporateWebsiteTitle: "Advanced Corporate Website",
     advancedCorporateWebsiteDescription:
       "A website of up to 8 pages, ideal for companies seeking a professional solution with advanced functionalities and a more solid structure.",
-    advancedCorporateWebsitePrice: "From $",
+
     advancedCorporateWebsiteFeature1:
       "Custom UI/UX design according to your brand identity",
     advancedCorporateWebsiteFeature2: "Advanced SEO optimization",
@@ -62,7 +63,7 @@ const lang = {
     professionalPortfolioTitle: "Professional or Personal Portfolio",
     professionalPortfolioDescription:
       "Perfect for freelancers, artists, or professionals looking to showcase their work professionally online.",
-    professionalPortfolioPrice: "From $",
+
     professionalPortfolioFeature1:
       "Custom design focused on visual presentation",
     professionalPortfolioFeature2: "Interactive galleries for work or projects",
@@ -74,7 +75,7 @@ const lang = {
     redesignAndOptimizationTitle: "Redesign and Optimization of Websites",
     redesignAndOptimizationDescription:
       "We redesign your current website to improve its appearance, performance, and SEO optimization.",
-    redesignAndOptimizationPrice: "From $",
+
     redesignAndOptimizationFeature1:
       "Complete redesign while keeping your content",
     redesignAndOptimizationFeature2: "Improvements in loading speed",
@@ -85,7 +86,7 @@ const lang = {
     redesignAndOptimizationSupport: "1 month post-launch support",
   },
   es: {
-    switchToSpanish: "Cambiar a Español", // updated to match English
+    switchToSpanish: "Cambiar a Español",
     title: "Haz crecer tu negocio con un sitio web diseñado a medida.",
     instructions:
       "Haz que tu presencia en línea hable por ti. Creamos sitios web vibrantes que combinan diseño atractivo y funcionalidad, llevando tu negocio al siguiente nivel.",
@@ -107,11 +108,12 @@ const lang = {
       "Integración de APIs y Microservicios Eficientes",
       "Consultoría Especializada en Diseño Web para Impactar tu Negocio",
     ],
+    from: "Desde $",
     ourServices: "Nuestros Servicios",
     professionalLandingPageTitle: "Landing Page Profesional", // updated to match English
     professionalLandingPageDescription:
       "Ideal para empresas que buscan una presencia online rápida y efectiva con una página única, diseñada con tecnologías modernas y 100% responsiva.",
-    professionalLandingPagePrice: "Desde $",
+
     professionalLandingPageFeature1: "Diseño a medida adaptado a tu marca",
     professionalLandingPageFeature2: "Optimización básica de SEO",
     professionalLandingPageFeature3: "Implementación de Google Analytics",
@@ -121,7 +123,7 @@ const lang = {
     standardCorporateWebsiteTitle: "Sitio Web Corporativo Estándar", // updated to match English
     standardCorporateWebsiteDescription:
       "Un sitio web de hasta 5 páginas, perfecto para pequeñas y medianas empresas que necesitan mostrar su catálogo de servicios o productos.",
-    standardCorporateWebsitePrice: "Desde $",
+
     standardCorporateWebsiteFeature1: "Diseño completamente personalizado",
     standardCorporateWebsiteFeature2: "Optimización SEO para Google",
     standardCorporateWebsiteFeature3: "Integración de Google Maps y Analytics",
@@ -133,7 +135,7 @@ const lang = {
     advancedCorporateWebsiteTitle: "Sitio Web Corporativo Avanzado", // updated to match English
     advancedCorporateWebsiteDescription:
       "Un sitio web de hasta 8 páginas, ideal para empresas que buscan una solución profesional con funcionalidades avanzadas y una estructura más sólida.",
-    advancedCorporateWebsitePrice: "Desde $",
+
     advancedCorporateWebsiteFeature1:
       "Diseño UI/UX personalizado según tu identidad de marca",
     advancedCorporateWebsiteFeature2: "Optimización avanzada de SEO",
@@ -146,7 +148,7 @@ const lang = {
     professionalPortfolioTitle: "Portafolio Profesional o Personal", // updated to match English
     professionalPortfolioDescription:
       "Perfecto para freelancers, artistas o profesionales que buscan mostrar su trabajo de manera profesional en línea.",
-    professionalPortfolioPrice: "Desde $",
+
     professionalPortfolioFeature1:
       "Diseño a medida enfocado en la presentación visual",
     professionalPortfolioFeature2:
@@ -159,7 +161,7 @@ const lang = {
     redesignAndOptimizationTitle: "Rediseño y Optimización de Sitios Web", // updated to match English
     redesignAndOptimizationDescription:
       "Rediseñamos tu página web actual para mejorar su apariencia, rendimiento y optimización SEO.",
-    redesignAndOptimizationPrice: "Desde $",
+
     redesignAndOptimizationFeature1:
       "Rediseño completo manteniendo tu contenido",
     redesignAndOptimizationFeature2: "Mejoras en la velocidad de carga",

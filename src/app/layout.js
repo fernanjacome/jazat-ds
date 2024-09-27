@@ -77,7 +77,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
               className="z-[100] md:hidden p-2"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              <FaBars />
+              <FaBars className="text-[1.75rem] text-gray-400" />
             </button>
             {/* Desktop Menu */}
             <div className="z-[100] hidden md:flex md:items-center">

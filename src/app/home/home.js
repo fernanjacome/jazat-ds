@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import ClientSatisfaction from "@/components/ClientSatisfaction";
 import { MdOutlineTextsms } from "react-icons/md";
 import IntercaladorTexto from "@/components/IntercaladorTexto";
+import ServicesSection from "../services/ServicesSection";
 
 export const Home = ({ language, currentLang }) => {
   const title = currentLang[language].title;
@@ -119,137 +120,7 @@ export const Home = ({ language, currentLang }) => {
           </div>
         </div>
       </section>
-      <section id="services" class="services-section">
-        <h2 class="section-title">{currentLang[language].ourServices}</h2>
-        <div class="container">
-          <div class="service-card">
-            <h3 class="service-subtitle">
-              {currentLang[language].professionalLandingPageTitle}
-            </h3>
-            <p class="service-description">
-              {currentLang[language].professionalLandingPageDescription}
-            </p>
-            <p class="service-price">
-              {currentLang[language].professionalLandingPagePrice}{" "}
-              <span className="text-blue-600">350</span>
-            </p>
-            <ul class="service-features">
-              <li>{currentLang[language].professionalLandingPageFeature1}</li>
-              <li>{currentLang[language].professionalLandingPageFeature2}</li>
-              <li>{currentLang[language].professionalLandingPageFeature3}</li>
-              <li>{currentLang[language].professionalLandingPageFeature4}</li>
-            </ul>
-            <p class="service-delivery">
-              <strong>Delivery Time:</strong>{" "}
-              {currentLang[language].professionalLandingPageDelivery}
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 class="service-subtitle">
-              {currentLang[language].standardCorporateWebsiteTitle}
-            </h3>
-            <p class="service-description">
-              {currentLang[language].standardCorporateWebsiteDescription}
-            </p>
-            <p class="service-price">
-              {currentLang[language].standardCorporateWebsitePrice}{" "}
-              <span className="text-red-600">700</span>
-            </p>
-            <ul class="service-features">
-              <li>{currentLang[language].standardCorporateWebsiteFeature1}</li>
-              <li>{currentLang[language].standardCorporateWebsiteFeature2}</li>
-              <li>{currentLang[language].standardCorporateWebsiteFeature3}</li>
-              <li>{currentLang[language].standardCorporateWebsiteFeature4}</li>
-            </ul>
-            <p class="service-delivery">
-              <strong>Delivery Time:</strong>{" "}
-              {currentLang[language].standardCorporateWebsiteDelivery}
-            </p>
-            <p class="service-support">
-              {currentLang[language].standardCorporateWebsiteSupport}
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 class="service-subtitle">
-              {currentLang[language].advancedCorporateWebsiteTitle}
-            </h3>
-            <p class="service-description">
-              {currentLang[language].advancedCorporateWebsiteDescription}
-            </p>
-            <p class="service-price">
-              {currentLang[language].advancedCorporateWebsitePrice}{" "}
-              <span className="text-green-600">1000</span>
-            </p>
-            <ul class="service-features">
-              <li>{currentLang[language].advancedCorporateWebsiteFeature1}</li>
-              <li>{currentLang[language].advancedCorporateWebsiteFeature2}</li>
-              <li>{currentLang[language].advancedCorporateWebsiteFeature3}</li>
-              <li>{currentLang[language].advancedCorporateWebsiteFeature4}</li>
-            </ul>
-            <p class="service-delivery">
-              <strong>Delivery Time:</strong>{" "}
-              {currentLang[language].advancedCorporateWebsiteDelivery}
-            </p>
-            <p class="service-support">
-              {currentLang[language].advancedCorporateWebsiteSupport}
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 class="service-subtitle">
-              {currentLang[language].professionalPortfolioTitle}
-            </h3>
-            <p class="service-description">
-              {currentLang[language].professionalPortfolioDescription}
-            </p>
-            <p class="service-price">
-              {currentLang[language].professionalPortfolioPrice}{" "}
-              <span className="text-primary">400</span>
-            </p>
-            <ul class="service-features">
-              <li>{currentLang[language].professionalPortfolioFeature1}</li>
-              <li>{currentLang[language].professionalPortfolioFeature2}</li>
-              <li>{currentLang[language].professionalPortfolioFeature3}</li>
-              <li>{currentLang[language].professionalPortfolioFeature4}</li>
-            </ul>
-            <p class="service-delivery">
-              <strong>Delivery Time:</strong>{" "}
-              {currentLang[language].professionalPortfolioDelivery}
-            </p>
-            <p class="service-support">
-              {currentLang[language].professionalPortfolioSupport}
-            </p>
-          </div>
-
-          <div class="service-card">
-            <h3 class="service-subtitle">
-              {currentLang[language].redesignAndOptimizationTitle}
-            </h3>
-            <p class="service-description">
-              {currentLang[language].redesignAndOptimizationDescription}
-            </p>
-            <p class="service-price">
-              {currentLang[language].redesignAndOptimizationPrice}{" "}
-              <span className="text-yellow-500">700</span>
-            </p>
-            <ul class="service-features">
-              <li>{currentLang[language].redesignAndOptimizationFeature1}</li>
-              <li>{currentLang[language].redesignAndOptimizationFeature2}</li>
-              <li>{currentLang[language].redesignAndOptimizationFeature3}</li>
-              <li>{currentLang[language].redesignAndOptimizationFeature4}</li>
-            </ul>
-            <p class="service-delivery">
-              <strong>Delivery Time:</strong>{" "}
-              {currentLang[language].redesignAndOptimizationDelivery}
-            </p>
-            <p class="service-support">
-              {currentLang[language].redesignAndOptimizationSupport}
-            </p>
-          </div>
-        </div>
-      </section>
+      <ServicesSection language={language} currentLang={currentLang} />
     </section>
   );
 };

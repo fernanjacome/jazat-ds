@@ -1,11 +1,7 @@
 "use client";
 
 import React from "react";
-import Button from "@/components/Button";
-import ClientSatisfaction from "@/components/ClientSatisfaction";
-import Card from "@/components/Card";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { MdOutlineTextsms } from "react-icons/md";
 import { Home } from "./home/home";
 
 export default function index() {
