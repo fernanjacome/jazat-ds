@@ -125,7 +125,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
             }`}
           >
             <div
-              className={`absolute top-[0%] right-[0%] w-full mobile-menu bg-background ${
+              className={`absolute top-[0%] right-[0%] w-full mobile-menu bg-background rounded-b-[20px] shadow-xl ${
                 menuOpen ? "open" : isExiting ? "closing" : "closing"
               }`}
             >

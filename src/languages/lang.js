@@ -24,7 +24,8 @@ const lang = {
       "Specialized Web Design Consulting to Impact Your Business",
     ],
     from: "From $",
-    ourServices: "Our Services",
+    ourServices: "Choose our services",
+    unlockEndless: "Unlock Endless Posibilities",
     professionalLandingPageTitle: "Professional Landing Page",
     professionalLandingPageDescription:
       "Ideal for businesses looking for a quick and effective online presence with a single page designed with modern technologies and 100% responsive.",
@@ -41,8 +42,7 @@ const lang = {
 
     standardCorporateWebsiteFeature1: "Fully personalized design",
     standardCorporateWebsiteFeature2: "SEO optimization for Google",
-    standardCorporateWebsiteFeature3:
-      "Integration of Google Maps and Analytics",
+    standardCorporateWebsiteFeature3: "Google Maps and Analytics",
     standardCorporateWebsiteFeature4: "Contact page with form and map",
     standardCorporateWebsiteDelivery: " 2 weeks",
     standardCorporateWebsiteSupport: "1 month post-launch support",
@@ -51,12 +51,10 @@ const lang = {
     advancedCorporateWebsiteDescription:
       "A website of up to 8 pages, ideal for companies seeking a professional solution with advanced functionalities and a more solid structure.",
 
-    advancedCorporateWebsiteFeature1:
-      "Custom UI/UX design according to your brand identity",
+    advancedCorporateWebsiteFeature1: "Custom UI/UX design for your brand",
     advancedCorporateWebsiteFeature2: "Advanced SEO optimization",
     advancedCorporateWebsiteFeature3: "Animations and interactive effects",
-    advancedCorporateWebsiteFeature4:
-      "Integration with marketing tools like Mailchimp",
+    advancedCorporateWebsiteFeature4: "Integration with marketing tools",
     advancedCorporateWebsiteDelivery: " 3 weeks",
     advancedCorporateWebsiteSupport: "2 months support and maintenance",
 
@@ -64,9 +62,8 @@ const lang = {
     professionalPortfolioDescription:
       "Perfect for freelancers, artists, or professionals looking to showcase their work professionally online.",
 
-    professionalPortfolioFeature1:
-      "Custom design focused on visual presentation",
-    professionalPortfolioFeature2: "Interactive galleries for work or projects",
+    professionalPortfolioFeature1: "Custom aesthetic design",
+    professionalPortfolioFeature2: "Interactive galleries",
     professionalPortfolioFeature3: "Mobile optimization",
     professionalPortfolioFeature4: "Social media integration",
     professionalPortfolioDelivery: " 1.5 weeks",
@@ -76,12 +73,10 @@ const lang = {
     redesignAndOptimizationDescription:
       "We redesign your current website to improve its appearance, performance, and SEO optimization.",
 
-    redesignAndOptimizationFeature1:
-      "Complete redesign while keeping your content",
+    redesignAndOptimizationFeature1: "Full redesign with your content",
     redesignAndOptimizationFeature2: "Improvements in loading speed",
-    redesignAndOptimizationFeature3:
-      "Optimization for mobile devices and tablets",
-    redesignAndOptimizationFeature4: "Adjustments to improve Google ranking",
+    redesignAndOptimizationFeature3: "Optimization for mobile devices",
+    redesignAndOptimizationFeature4: "SEO Improvements",
     redesignAndOptimizationDelivery: " 1.5 weeks",
     redesignAndOptimizationSupport: "1 month post-launch support",
   },
@@ -109,7 +104,8 @@ const lang = {
       "Consultoría Especializada en Diseño Web para Impactar tu Negocio",
     ],
     from: "Desde $",
-    ourServices: "Nuestros Servicios",
+    ourServices: "Elige Nuestros Servicios",
+    unlockEndless: "Desbloquea Posibilidades Infinitas",
     professionalLandingPageTitle: "Landing Page Profesional", // updated to match English
     professionalLandingPageDescription:
       "Ideal para empresas que buscan una presencia online rápida y efectiva con una página única, diseñada con tecnologías modernas y 100% responsiva.",
@@ -126,9 +122,8 @@ const lang = {
 
     standardCorporateWebsiteFeature1: "Diseño completamente personalizado",
     standardCorporateWebsiteFeature2: "Optimización SEO para Google",
-    standardCorporateWebsiteFeature3: "Integración de Google Maps y Analytics",
-    standardCorporateWebsiteFeature4:
-      "Página de contacto con formulario y mapa",
+    standardCorporateWebsiteFeature3: "Google Maps y Analytics",
+    standardCorporateWebsiteFeature4: "Formulario de contacto y mapa",
     standardCorporateWebsiteDelivery: " 2 semanas",
     standardCorporateWebsiteSupport: "Soporte post-lanzamiento de 1 mes",
 
@@ -136,12 +131,10 @@ const lang = {
     advancedCorporateWebsiteDescription:
       "Un sitio web de hasta 8 páginas, ideal para empresas que buscan una solución profesional con funcionalidades avanzadas y una estructura más sólida.",
 
-    advancedCorporateWebsiteFeature1:
-      "Diseño UI/UX personalizado según tu identidad de marca",
+    advancedCorporateWebsiteFeature1: "Diseño UI/UX basado en tu marca",
     advancedCorporateWebsiteFeature2: "Optimización avanzada de SEO",
     advancedCorporateWebsiteFeature3: "Animaciones y efectos interactivos",
-    advancedCorporateWebsiteFeature4:
-      "Integración con herramientas de marketing como Mailchimp",
+    advancedCorporateWebsiteFeature4: "Integración con marketing digital",
     advancedCorporateWebsiteDelivery: " 3 semanas",
     advancedCorporateWebsiteSupport: "Soporte y mantenimiento por 2 meses",
 
@@ -149,10 +142,8 @@ const lang = {
     professionalPortfolioDescription:
       "Perfecto para freelancers, artistas o profesionales que buscan mostrar su trabajo de manera profesional en línea.",
 
-    professionalPortfolioFeature1:
-      "Diseño a medida enfocado en la presentación visual",
-    professionalPortfolioFeature2:
-      "Galerías interactivas para trabajos o proyectos",
+    professionalPortfolioFeature1: "Diseño estético personalizado",
+    professionalPortfolioFeature2: "Galerías interactivas",
     professionalPortfolioFeature3: "Optimización para dispositivos móviles",
     professionalPortfolioFeature4: "Integración de redes sociales",
     professionalPortfolioDelivery: " 1.5 semanas",
@@ -162,13 +153,10 @@ const lang = {
     redesignAndOptimizationDescription:
       "Rediseñamos tu página web actual para mejorar su apariencia, rendimiento y optimización SEO.",
 
-    redesignAndOptimizationFeature1:
-      "Rediseño completo manteniendo tu contenido",
+    redesignAndOptimizationFeature1: "Rediseño total con tu contenido",
     redesignAndOptimizationFeature2: "Mejoras en la velocidad de carga",
-    redesignAndOptimizationFeature3:
-      "Optimización para dispositivos móviles y tablets",
-    redesignAndOptimizationFeature4:
-      "Ajustes para mejorar el posicionamiento en Google",
+    redesignAndOptimizationFeature3: "Optimización para dispositivos móviles",
+    redesignAndOptimizationFeature4: "Mejoras en SEO",
     redesignAndOptimizationDelivery: " 1.5 semanas",
     redesignAndOptimizationSupport: "Soporte post-lanzamiento de 1 mes",
   },

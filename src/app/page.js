@@ -1,8 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Home } from "./home/home";
+import LazySection from "@/components/LazySection";
+import { Spinner } from "@/components/Spinner";
+
+const Home = lazy(() => import("./home/home"));
+const ServicesSection = lazy(() => import("./services/ServicesSection"));
 
 export default function index() {
   return <MainContent />;
@@ -16,8 +20,20 @@ const MainContent = () => {
   }
 
   return (
-    <section>
-      <Home language={language} currentLang={currentLang} />
+    <section className="section-main">
+      {/* Sección home */}
+      <LazySection>
+        <Suspense fallback={<Spinner />}>
+          <Home language={language} currentLang={currentLang} />
+        </Suspense>
+      </LazySection>
+
+      {/* Sección servicios */}
+      <LazySection>
+        <Suspense fallback={<Spinner />}>
+          <ServicesSection language={language} currentLang={currentLang} />
+        </Suspense>
+      </LazySection>
     </section>
   );
 };
