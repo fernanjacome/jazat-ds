@@ -34,7 +34,7 @@ const lang = {
     professionalLandingPageFeature2: "Basic SEO optimization",
     professionalLandingPageFeature3: "Implementation of Google Analytics",
     professionalLandingPageFeature4: "Dynamic contact form",
-    professionalLandingPageDelivery: " 1 week",
+    professionalLandingPageDelivery: " 3 weeks",
 
     standardCorporateWebsiteTitle: "Standard Corporate Website",
     standardCorporateWebsiteDescription:
@@ -44,7 +44,7 @@ const lang = {
     standardCorporateWebsiteFeature2: "SEO optimization for Google",
     standardCorporateWebsiteFeature3: "Google Maps and Analytics",
     standardCorporateWebsiteFeature4: "Contact page with form and map",
-    standardCorporateWebsiteDelivery: " 2 weeks",
+    standardCorporateWebsiteDelivery: " 5 weeks",
     standardCorporateWebsiteSupport: "1 month post-launch support",
 
     advancedCorporateWebsiteTitle: "Advanced Corporate Website",
@@ -55,7 +55,7 @@ const lang = {
     advancedCorporateWebsiteFeature2: "Advanced SEO optimization",
     advancedCorporateWebsiteFeature3: "Animations and interactive effects",
     advancedCorporateWebsiteFeature4: "Integration with marketing tools",
-    advancedCorporateWebsiteDelivery: " 3 weeks",
+    advancedCorporateWebsiteDelivery: " 7 weeks",
     advancedCorporateWebsiteSupport: "2 months support and maintenance",
 
     professionalPortfolioTitle: "Professional or Personal Portfolio",
@@ -66,7 +66,7 @@ const lang = {
     professionalPortfolioFeature2: "Interactive galleries",
     professionalPortfolioFeature3: "Mobile optimization",
     professionalPortfolioFeature4: "Social media integration",
-    professionalPortfolioDelivery: " 1.5 weeks",
+    professionalPortfolioDelivery: " 3 weeks",
     professionalPortfolioSupport: "1 month post-launch support",
 
     redesignAndOptimizationTitle: "Redesign and Optimization of Websites",
@@ -77,7 +77,7 @@ const lang = {
     redesignAndOptimizationFeature2: "Improvements in loading speed",
     redesignAndOptimizationFeature3: "Optimization for mobile devices",
     redesignAndOptimizationFeature4: "SEO Improvements",
-    redesignAndOptimizationDelivery: " 1.5 weeks",
+    redesignAndOptimizationDelivery: " 3 weeks",
     redesignAndOptimizationSupport: "1 month post-launch support",
   },
   es: {
@@ -114,7 +114,7 @@ const lang = {
     professionalLandingPageFeature2: "Optimización básica de SEO",
     professionalLandingPageFeature3: "Implementación de Google Analytics",
     professionalLandingPageFeature4: "Formulario de contacto dinámico",
-    professionalLandingPageDelivery: " 1 semana",
+    professionalLandingPageDelivery: "3 semanas",
 
     standardCorporateWebsiteTitle: "Sitio Web Corporativo Estándar", // updated to match English
     standardCorporateWebsiteDescription:
@@ -124,7 +124,7 @@ const lang = {
     standardCorporateWebsiteFeature2: "Optimización SEO para Google",
     standardCorporateWebsiteFeature3: "Google Maps y Analytics",
     standardCorporateWebsiteFeature4: "Formulario de contacto y mapa",
-    standardCorporateWebsiteDelivery: " 2 semanas",
+    standardCorporateWebsiteDelivery: "5 semanas",
     standardCorporateWebsiteSupport: "Soporte post-lanzamiento de 1 mes",
 
     advancedCorporateWebsiteTitle: "Sitio Web Corporativo Avanzado", // updated to match English
@@ -135,7 +135,7 @@ const lang = {
     advancedCorporateWebsiteFeature2: "Optimización avanzada de SEO",
     advancedCorporateWebsiteFeature3: "Animaciones y efectos interactivos",
     advancedCorporateWebsiteFeature4: "Integración con marketing digital",
-    advancedCorporateWebsiteDelivery: " 3 semanas",
+    advancedCorporateWebsiteDelivery: "7 semanas",
     advancedCorporateWebsiteSupport: "Soporte y mantenimiento por 2 meses",
 
     professionalPortfolioTitle: "Portafolio Profesional o Personal", // updated to match English
@@ -146,7 +146,7 @@ const lang = {
     professionalPortfolioFeature2: "Galerías interactivas",
     professionalPortfolioFeature3: "Optimización para dispositivos móviles",
     professionalPortfolioFeature4: "Integración de redes sociales",
-    professionalPortfolioDelivery: " 1.5 semanas",
+    professionalPortfolioDelivery: "3 semanas",
     professionalPortfolioSupport: "Soporte post-lanzamiento de 1 mes",
 
     redesignAndOptimizationTitle: "Rediseño y Optimización de Sitios Web", // updated to match English
@@ -157,7 +157,7 @@ const lang = {
     redesignAndOptimizationFeature2: "Mejoras en la velocidad de carga",
     redesignAndOptimizationFeature3: "Optimización para dispositivos móviles",
     redesignAndOptimizationFeature4: "Mejoras en SEO",
-    redesignAndOptimizationDelivery: " 1.5 semanas",
+    redesignAndOptimizationDelivery: "3 semanas",
     redesignAndOptimizationSupport: "Soporte post-lanzamiento de 1 mes",
   },
 };

@@ -52,7 +52,7 @@ const Home = ({ language, currentLang }) => {
   };
 
   return (
-    <section className="home-content">
+    <section id="home" className="home-content">
       <div className="column-1">
         <h1 className="home-title  ">
           {title.split(" ").map((word, index) =>

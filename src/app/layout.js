@@ -50,7 +50,10 @@ const MainContent = ({ children, title, description, sectionName }) => {
     <html lang={language}>
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=0.9max-scale=0.9"
+        />
         <title>{title}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -96,13 +99,15 @@ const MainContent = ({ children, title, description, sectionName }) => {
 
             <div className="z-[100] hidden md:flex md:items-center">
               <ul className="mr-10 flex md:flex-row flex-col md:gap-[4vw] gap-8">
-                {["projects", "about", "contact", "services"].map((item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} className="hover:text-purple-500">
-                      {currentLang[language][item]}
-                    </a>
-                  </li>
-                ))}
+                {["home", "projects", "about", "contact", "services"].map(
+                  (item) => (
+                    <li key={item}>
+                      <a href={`#${item}`} className="hover:text-purple-500">
+                        {currentLang[language][item]}
+                      </a>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
             <div className="z-[100] hidden md:flex gap-2">

@@ -37,11 +37,11 @@ const MainContent = () => {
       </LazySection>
 
       {/* Sección Proyectos */}
-      <LazySection>
+      {/* <LazySection>
         <Suspense fallback={<Spinner />}>
           <ProjectSection language={language} currentLang={currentLang} />
         </Suspense>
-      </LazySection>
+      </LazySection> */}
     </section>
   );
 };
