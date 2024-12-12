@@ -65,7 +65,7 @@ const MainContent = ({ children, title, description, sectionName }) => {
         <meta name="description" content={description} />
       </head>
       <body>
-        <header className="fixed w-full z-[100] bg-transparent backdrop-blur-lg flex px-4 py-2 border-b-2 border-opacity-15 border-gray-400">
+        <header>
           <nav className="z-[100] flex justify-between items-center w-[90%] mx-auto">
             <div className="md:hidden">
               <LanguageSwitcher />
@@ -95,16 +95,14 @@ const MainContent = ({ children, title, description, sectionName }) => {
             </button>
 
             <div className="z-[100] hidden md:flex md:items-center">
-              <ul className="flex md:flex-row flex-col md:gap-[4vw] gap-8">
-                {["home", "projects", "about", "contact", "services"].map(
-                  (item) => (
-                    <li key={item}>
-                      <a href={`/${item}`} className="hover:text-purple-500">
-                        {currentLang[language][item]}
-                      </a>
-                    </li>
-                  )
-                )}
+              <ul className="mr-10 flex md:flex-row flex-col md:gap-[4vw] gap-8">
+                {["projects", "about", "contact", "services"].map((item) => (
+                  <li key={item}>
+                    <a href={`#${item}`} className="hover:text-purple-500">
+                      {currentLang[language][item]}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="z-[100] hidden md:flex gap-2">

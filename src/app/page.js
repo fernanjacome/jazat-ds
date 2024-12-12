@@ -4,6 +4,7 @@ import React, { Suspense, lazy } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import LazySection from "@/components/LazySection";
 import { Spinner } from "@/components/Spinner";
+import ProjectSection from "./projects/ProjectSection";
 
 const Home = lazy(() => import("./home/home"));
 const ServicesSection = lazy(() => import("./services/ServicesSection"));
@@ -32,6 +33,13 @@ const MainContent = () => {
       <LazySection>
         <Suspense fallback={<Spinner />}>
           <ServicesSection language={language} currentLang={currentLang} />
+        </Suspense>
+      </LazySection>
+
+      {/* Sección Proyectos */}
+      <LazySection>
+        <Suspense fallback={<Spinner />}>
+          <ProjectSection language={language} currentLang={currentLang} />
         </Suspense>
       </LazySection>
     </section>

@@ -8,6 +8,7 @@ const Button = ({
   icon: IconComponent,
   iconPosition = "left",
   className = "",
+  sx,
 }) => {
   const primary =
     "border-2 border-primary bg-primary text-white hover:bg-transparent hover:border-primary transition-all duration-200";
@@ -22,6 +23,7 @@ const Button = ({
       } font-semibold rounded-lg px-6 py-2 flex items-center justify-center gap-2 ${className}`}
       onClick={onClick}
       aria-label={label} // Añadido para accesibilidad
+      style={{ ...sx }}
     >
       {/* Ícono a la izquierda */}
       {IconComponent && iconPosition === "left" && (
